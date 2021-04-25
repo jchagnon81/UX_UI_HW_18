@@ -1,0 +1,59 @@
+html {
+    font-family: 'Source Serif Pro', serif;
+    background-color: #708090;
+}
+
+
+.logo img {
+    width: 40%;
+    margin-left: 55%;
+}
+
+#Designer {
+    color: #228B22;
+    position: relative;
+    left: 80%;
+    width: 100px;
+
+}
+
+.menu {
+    position: relative;
+    left: 80%;
+    width: 100px;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+
+.heroImg {
+    border-width: 1px;
+    border-color: red;
+    border-style: dotted;
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    width: auto;
+    list-style-type: none;
+    background-color: #708090;
+}
+
+.footer li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    left: 15%;
+}
