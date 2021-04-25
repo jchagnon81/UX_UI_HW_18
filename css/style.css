@@ -1,0 +1,128 @@
+html {
+    background-color: #708090;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.logo {
+    position: relative;
+    left: 85%;
+}
+
+.logo img {
+    width: 15%;
+    content: center;
+
+}
+
+#Designer {
+    color: #228B22;
+    position: relative;
+    left: 76%;
+
+}
+
+.menu {
+    position: relative;
+    left: 75%;
+}
+
+#about:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+#skills:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+#work:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+#contact:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+
+.heroImg {
+    background-color: black;
+    width: auto;
+    height: 100%;
+    padding: 25px;
+    color: white;
+
+}
+
+.content {
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+.content img {
+    float: right;
+    padding: 5px;
+    margin: 25px;
+
+}
+
+.grid {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Source Serif Pro', serif;
+    color: white;
+    grid-template-areas:
+    "hover"
+    "disabled"
+    ;
+    height: 250px;
+  }
+
+.button {
+    grid-area: hover;
+    background-color: #9E00BB;
+    color: white;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color:#EB7EFF;
+    color: black;
+    cursor: pointer;
+}
+  
+
+.footer {
+    display: inline-block;
+    padding: 5px;
+    width: auto;
+    position: relative;
+    left: 15%;
+}
+
+
+#behance:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+#linkedin:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
+
+#tbd:hover {
+    color: #D9FF59;
+    cursor: pointer;
+}
