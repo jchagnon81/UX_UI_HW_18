@@ -14,9 +14,6 @@ html {
     position: relative;
     left: 80%;
     width: 100px;
-    border-width: 1px;
-    border-color: red;
-    border-style: dotted;
 
 }
 
@@ -26,9 +23,6 @@ html {
     width: 100px;
     padding: 0 0;
     list-style-type: none;
-    border-width: 1px;
-    border-color: red;
-    border-style: dotted;
 }
 
 li a {
@@ -43,38 +37,87 @@ li a:hover{
 
 
 .heroImg {
-    border-width: 1px;
-    border-color: red;
-    border-style: dotted;
     background-color: black;
     color: white;
 }
 
 .myWork {
-    border-width: 1px;
-    border-color: red;
-    border-style: dotted;
+    grid-area: 'myArea';
+    width: 50%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .workGrid {
-    border-width: 5px;
-    border-color: red;
-    border-style: dotted;
+    border-width: 1px;
+    padding: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-areas: 'img img details button';
+}
+
+.itemA {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.itemB {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.itemC {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.itemD {
+    grid-area: 4 / 1 / span 1 / span 2;
+}
+
+.item1 {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.item2 {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.item3 {
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+.item4 {
+    grid-area: 4 / 3 / span 1 / span 1;
+}
+
+.button1 {
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+.button2 {
+    grid-area: 2 / 4 / span 1 / span 1;
+}
+
+.button3 {
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+.button1 {
+    grid-area: 4 / 4 / span 1 / span 1;
 }
 
 .workGrid div {
-    border-width: 1px;
-    border-color: red;
-    border-style: dotted;
+    text-align: center;
+    padding: 5px 5px;
 }
+
 
 .footer {
     width: auto;
     list-style-type: none;
     background-color: #708090;
-    border-width: 1px;
-    border-color: red;
-    border-style: dotted;
 }
 
 .footer li {
