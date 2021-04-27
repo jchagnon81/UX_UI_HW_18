@@ -42,7 +42,6 @@ li a:hover{
 }
 
 .myWork {
-    grid-area: 'myArea';
     width: 50%;
     padding: 25px;
     margin-left: auto;
@@ -50,67 +49,94 @@ li a:hover{
 }
 
 .workGrid {
+    border-style: dotted;
+    border-color: violet;
     border-width: 1px;
     padding: 10px;
     column-gap: 5px;
     row-gap: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     align-items: center;
-    grid-template-areas: 'img img details button';
+    grid-template-areas:
+    "img details button"
+    "img details button"
+    "img details button"
+    "img details button"
+    ;
 }
 
 .itemA {
-    grid-area: 1 / 1 / span 1 / span 2;
+    grid-area: "img";
 }
 
 .itemB {
-    grid-area: 2 / 1 / span 1 / span 2;
+    grid-area: "img";
 }
 
 .itemC {
-    grid-area: 3 / 1 / span 1 / span 2;
+    grid-area: "img";
 }
 
 .itemD {
-    grid-area: 4 / 1 / span 1 / span 2;
+    grid-area: "img";
 }
 
 .item1 {
-    grid-area: 1 / 3 / span 1 / span 1;
+    grid-area: "details";
 }
 
 .item2 {
-    grid-area: 2 / 3 / span 1 / span 1;
+    grid-area: "details";
 }
 
 .item3 {
-    grid-area: 3 / 3 / span 1 / span 1;
+    grid-area: "details";
 }
 
 .item4 {
-    grid-area: 4 / 3 / span 1 / span 1;
+    grid-area: "details";
 }
 
 .button1 {
-    grid-area: 1 / 4 / span 1 / span 1;
+    grid-area: "button";
 }
 
 .button2 {
-    grid-area: 2 / 4 / span 1 / span 1;
+    grid-area: "button";
 }
 
 .button3 {
-    grid-area: 3 / 4 / span 1 / span 1;
+    grid-area: "button";
 }
 
-.button1 {
-    grid-area: 4 / 4 / span 1 / span 1;
+.button4 {
+    grid-area: "button";
 }
+
 
 .workGrid div {
+    border-style: dotted;
+    border-color: violet;
+    border-width: 1px;
     text-align: center;
     padding: 5px 5px;
+}
+
+.button {
+    background-color: #9E00BB;
+    color: white;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color:#EB7EFF;
+    color: black;
+    cursor: pointer;
 }
 
 
@@ -126,4 +152,22 @@ li a:hover{
     padding: 10px;
     position: relative;
     left: 15%;
+}
+
+@media only screen and (max-width: 600) {
+    .workGrid {
+        border-style: dotted;
+        border-color: violet;
+        border-width: 1px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-template-areas:
+        "img"
+        "details"
+        "button"
+        ;
+    }
+
 }
