@@ -11,18 +11,23 @@ html {
 
 #Designer {
     color: #228B22;
-    position: relative;
-    left: 80%;
-    width: 100px;
+    width: auto;
+    text-align: right;
+    border-color: orangered;
+    border-width: 1px;
+    border-style: dotted;
 
 }
 
 .menu {
-    position: relative;
-    left: 80%;
-    width: 100px;
+    width: auto;
+    height: 100px;
     padding: 0 0;
     list-style-type: none;
+    text-align: right;
+    border-color: magenta;
+    border-width: 1px;
+    border-style: dotted;
 }
 
 li a {
@@ -42,36 +47,222 @@ li a:hover{
     color: white;
 }
 
+/* About Me Coding */
+
 .content {
     background-color: black;
     color: white;
-    width: 50%;
-    height: 50%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
     padding: 20px;
+    border-color: yellow;
+    border-width: 1px;
+    border-style: dotted;
 }
 
 .content img {
     float: right;
-    padding: 5px;
-    margin: 25px;
+    margin: 20px;
+    width: 25%;
+    height: auto;
+    border-color: orange;
+    border-width: 1px;
+    border-style: dotted;
 }
 
-.grid {
-    display: grid;
-    background-color: black;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    font-family: 'Source Serif Pro', serif;
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9E00BB;
     color: white;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color:#EB7EFF;
+    color: black;
+    cursor: pointer;
+}
+
+.Resume {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 50px;
+    display: flex;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-color: violet;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+/* My Skills Coding */
+
+.mySkills {
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 75%;
+    border-color: palevioletred;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+.mySkills img {
+    width: 50%;
+    height: auto;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-color: yellowgreen;
+    border-width: 1px;
+    border-style: dotted;
+
+}
+
+.flexContainer div {
+    width: 33%;
+    padding: 5px;
+    margin: 5px;
+    border-color: red;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+.flexContainer2 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-color: yellowgreen;
+    border-width: 1px;
+    border-style: dotted;
+
+
+}
+
+.flexContainer2 div {
+    width: 33%;
+    padding: 5px;
+    margin: 5px;
+    border-color: red;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+.footer {
+    width: auto;
+    list-style-type: none;
+    background-color: #708090;
+}
+
+.footer li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    left: 15%;
+}
+
+
+
+/* My Work Coding */
+
+.myWork {
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 75%;
+}
+
+.workGrid {
+    border-style: dotted;
+    border-color: violet;
+    border-width: 1px;
+    padding: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
     grid-template-areas:
-    "hover"
-    "disabled"
+    "img details button"
+    "img details button"
+    "img details button"
+    "img details button"
     ;
-    height: 250px;
-  }
+}
+
+.itemA {
+    grid-area: "img";
+}
+
+.itemB {
+    grid-area: "img";
+}
+
+.itemC {
+    grid-area: "img";
+}
+
+.itemD {
+    grid-area: "img";
+}
+
+.item1 {
+    grid-area: "details";
+}
+
+.item2 {
+    grid-area: "details";
+}
+
+.item3 {
+    grid-area: "details";
+}
+
+.item4 {
+    grid-area: "details";
+}
+
+.button1 {
+    grid-area: "button";
+}
+
+.button2 {
+    grid-area: "button";
+}
+
+.button3 {
+    grid-area: "button";
+}
+
+.button4 {
+    grid-area: "button";
+}
+
+
+.workGrid div {
+    border-style: dotted;
+    border-color: violet;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px 5px;
+}
 
 .button {
     background-color: #9E00BB;
@@ -87,7 +278,7 @@ li a:hover{
     color: black;
     cursor: pointer;
 }
-  
+
 
 .footer {
     width: auto;
@@ -101,4 +292,76 @@ li a:hover{
     padding: 10px;
     position: relative;
     left: 15%;
+}
+
+
+/* Footer Code*/
+  
+
+.footer {
+    width: auto;
+    list-style-type: none;
+    background-color: #708090;
+}
+
+.footer li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+    
+    .flexContainer div {
+        width: 33%;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .flexContainer2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+    
+    .flexContainer2 div {
+        width: 33%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 600) {
+    .workGrid {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+        grid-template-areas:
+        "img"
+        "details"
+        "button"
+        "img"
+        "details"
+        "button"
+        "img"
+        "details"
+        "button"
+        "img"
+        "details"
+        "button"
+        ;
+    }
+
 }
