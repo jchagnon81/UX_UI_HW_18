@@ -9,6 +9,8 @@ html {
     margin-left: 55%;
 }
 
+/* Header and Nav */
+
 #Designer {
     color: #228B22;
     width: auto;
@@ -33,6 +35,8 @@ li a:hover{
     color: #D9FF59;
     cursor: pointer;
 }
+
+/* Hero Content */
 
 
 .heroImg {
@@ -60,23 +64,6 @@ li a:hover{
 }
 
 
-.button {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #9E00BB;
-    color: white;
-    width: 150px;
-    text-align: center;
-    height: 50px;
-    transition: 0.5s;
-}
-
-.button:hover {
-    background-color:#EB7EFF;
-    color: black;
-    cursor: pointer;
-}
-
 .Resume {
     margin-right: auto;
     margin-left: auto;
@@ -100,33 +87,25 @@ li a:hover{
 }
 
 .mySkills img {
-    width: 50%;
+    width: 100%;
     height: auto;
+    min-width: 200px;
 }
 
 .flexContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 10px;
+    
 }
 
 .flexContainer div {
-    width: 33%;
-    padding: 5px;
-    margin: 5px;
+    width: 25%;
+    margin: 20px;
 }
 
-.flexContainer2 {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
-.flexContainer2 div {
-    width: 33%;
-    padding: 5px;
-    margin: 5px;
-}
+/* Footer Coding */
 
 .footer {
     width: auto;
@@ -225,6 +204,8 @@ li a:hover{
     padding: 5px 5px;
 }
 
+/* Button Code */
+
 .button {
     background-color: #9E00BB;
     color: white;
@@ -238,21 +219,6 @@ li a:hover{
     background-color:#EB7EFF;
     color: black;
     cursor: pointer;
-}
-
-
-.footer {
-    width: auto;
-    list-style-type: none;
-    background-color: #708090;
-}
-
-.footer li {
-    display: inline-block;
-    font-size: 15px;
-    padding: 10px;
-    position: relative;
-    left: 15%;
 }
 
 
@@ -275,36 +241,15 @@ li a:hover{
 
 /* Media Query */
 
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
     .flexContainer {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    
+        flex-direction: column;   
     }
     
     .flexContainer div {
-        width: 33%;
-        padding: 5px;
-        margin: 5px;
-    }
-    
-    .flexContainer2 {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    
-    }
-    
-    .flexContainer2 div {
-        width: 33%;
-        padding: 5px;
-        margin: 5px;
+        width: 100%;
     }
 
-}
-
-@media only screen and (max-width: 600) {
     .workGrid {
         padding: 10px;
         grid-template-columns: 1fr;
